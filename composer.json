@@ -1,0 +1,46 @@
+{
+  "name": "dkd/typo3-cms-standard",
+  "description": "ACO TYPO3 standard package",
+  "license": "proprietary",
+  "authors": [
+ ],
+  "config": {
+    "bin-dir": "bin",
+    "secure-http": false
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ksjogo/t3_semantic_eye.git"
+    }
+  ],
+  "replace": {
+    "typo3-cms-extension/extbase": "*",
+    "typo3-cms-extension/fluid": "*",
+    "typo3-cms-extension/version": "*"
+  },
+  "require": {
+    "typo3/cms": "^7.6",
+    "typo3-ter/devlog": "*",
+    "dkd/semantic-eye": "dev-develop",
+    "helhum/typo3-console": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.3",
+    "squizlabs/php_codesniffer": "^2.6"
+  },
+  "extra": {
+    "typo3/cms": {
+    },
+    "helhum/typo3-console": {
+      "install-binary": false,
+      "active-packages": [
+        "dkd_semantic_eye"
+      ]
+    }
+  }
+}

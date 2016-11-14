@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  typo3:
+    volumes:
+      - ./typo3conf/ext/semantic_eye:/var/www/html/typo3conf/ext/semantic_eye
+
+  db:
+    ports:
+      - 3306:3306
