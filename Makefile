@@ -28,7 +28,7 @@ console: ## Trigger Symfony script bin/command
 typo3: buildtypo3 ## Run the typo3 instance from docker compose
 	@export XDEBUG_CONFIG=${XDEBUG_CONFIG} && docker-compose -f docker-compose.yml -f docker-compose.dev.yml up typo3
 
-typobash: ## Get a bash inside the typo3 instance
+typo3bash: ## Get a bash inside the typo3 instance
 	@export XDEBUG_CONFIG=${XDEBUG_CONFIG} && docker-compose exec typo3 bash
 
 typo3_prod: ## Run the typo3 instance from docker compose
