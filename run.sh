@@ -10,7 +10,7 @@ do
 done
 
 vendor/helhum/typo3-console/Scripts/typo3cms install:generatepackagestates --activate-default=true
-vendor/helhum/typo3-console/Scripts/typo3cms install:setup install:setup --non-interactive \
+vendor/helhum/typo3-console/Scripts/typo3cms install:setup --non-interactive \
                                              --database-user-name="$MYSQL_USER" \
                                              --database-host-name="$MYSQL_HOST" \
                                              --database-port="3306" \
@@ -22,8 +22,8 @@ vendor/helhum/typo3-console/Scripts/typo3cms install:setup install:setup --non-i
                                              --site-name="TYPO3 Importr Demo"
 
 vendor/helhum/typo3-console/Scripts/typo3cms extension:activate semantic_eye
-vendor/helhum/typo3-console/Scripts/typo3cms extension:setupactivate
 vendor/helhum/typo3-console/Scripts/typo3cms cache:flush
+vendor/helhum/typo3-console/Scripts/typo3cms extension:setupactivate
 
 chown -R www-data:www-data /var/www/html
 apache2-foreground
