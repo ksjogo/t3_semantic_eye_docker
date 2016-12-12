@@ -4,3 +4,6 @@
 /typo3_src
 /typo3conf
 /vendor
+.idea
+composer.phar
+#!/typo3conf/ext/semantic_eye

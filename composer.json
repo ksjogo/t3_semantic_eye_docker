@@ -27,7 +27,8 @@
     "typo3/cms": "^7.6",
     "typo3-ter/devlog": "*",
     "dkd/semantic-eye": "dev-develop",
-    "helhum/typo3-console": "*"
+    "helhum/typo3-console": "*",
+    "guzzlehttp/guzzle": "~6.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.3",
