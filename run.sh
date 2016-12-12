@@ -23,7 +23,7 @@ vendor/helhum/typo3-console/Scripts/typo3cms install:setup --non-interactive \
 
 vendor/helhum/typo3-console/Scripts/typo3cms extension:activate semantic_eye
 vendor/helhum/typo3-console/Scripts/typo3cms cache:flush
-vendor/helhum/typo3-console/Scripts/typo3cms extension:setupactivate
+vendor/helhum/typo3-console/Scripts/typo3cms extension:setupactive
 
 chown -R www-data:www-data /var/www/html
 apache2-foreground
