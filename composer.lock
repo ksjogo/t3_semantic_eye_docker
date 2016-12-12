@@ -64,18 +64,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ksjogo/t3_semantic_eye.git",
-                "reference": "029d9e64103e321c1768e7be25836773eca8fde1"
+                "reference": "db7a18fc40303d2125244d4ab5b0034532ecf2f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ksjogo/t3_semantic_eye/zipball/029d9e64103e321c1768e7be25836773eca8fde1",
-                "reference": "029d9e64103e321c1768e7be25836773eca8fde1",
+                "url": "https://api.github.com/repos/ksjogo/t3_semantic_eye/zipball/db7a18fc40303d2125244d4ab5b0034532ecf2f4",
+                "reference": "db7a18fc40303d2125244d4ab5b0034532ecf2f4",
                 "shasum": ""
             },
             "require": {
                 "google/cloud": "^0.11.1",
-                "guzzlehttp/guzzle": "~6.0",
-                "typo3/cms": "7.6"
+                "guzzlehttp/guzzle": "^6.0",
+                "typo3/cms": "^7.6"
             },
             "type": "typo3-cms-extension",
             "autoload": {
@@ -98,7 +98,7 @@
                 "source": "https://github.com/ksjogo/t3_semantic_eye/tree/develop",
                 "issues": "https://github.com/ksjogo/t3_semantic_eye/issues"
             },
-            "time": "2016-12-12 15:23:01"
+            "time": "2016-12-12 19:01:14"
         },
         {
             "name": "doctrine/instantiator",
@@ -719,22 +719,72 @@
             "time": "2016-11-26 00:15:39"
         },
         {
-            "name": "pear/http_request2",
-            "version": "v2.2.1",
+            "name": "mso/idna-convert",
+            "version": "v0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pear/HTTP_Request2.git",
-                "reference": "d6c81670c504045248c1afdf896bb9a3288158de"
+                "url": "https://github.com/phlylabs/idna-convert.git",
+                "reference": "0a0a09e460e63739d82c3f0c3f0e5555567a6be3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/d6c81670c504045248c1afdf896bb9a3288158de",
-                "reference": "d6c81670c504045248c1afdf896bb9a3288158de",
+                "url": "https://api.github.com/repos/phlylabs/idna-convert/zipball/0a0a09e460e63739d82c3f0c3f0e5555567a6be3",
+                "reference": "0a0a09e460e63739d82c3f0c3f0e5555567a6be3",
                 "shasum": ""
             },
             "require": {
-                "pear/net_url2": ">=2.0.0",
-                "pear/pear_exception": "*",
+                "ext-pcre": "*",
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "idna_convert.class.php",
+                    "uctc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Sommerfeld",
+                    "email": "mso@phlylabs.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A library for encoding and decoding internationalized domain names",
+            "homepage": "http://idnaconv.net/",
+            "keywords": [
+                "idn",
+                "idna",
+                "php"
+            ],
+            "time": "2016-01-06 21:05:46"
+        },
+        {
+            "name": "pear/http_request2",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/HTTP_Request2.git",
+                "reference": "3599cf0fe455a4e281da464f6510bfc5c2ce54c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/3599cf0fe455a4e281da464f6510bfc5c2ce54c4",
+                "reference": "3599cf0fe455a4e281da464f6510bfc5c2ce54c4",
+                "shasum": ""
+            },
+            "require": {
+                "pear/net_url2": "^2.2.0",
+                "pear/pear_exception": "^1.0.0",
                 "php": ">=5.2.0"
             },
             "suggest": {
@@ -744,20 +794,27 @@
                 "lib-openssl": "Allows handling SSL requests when not using cURL."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-trunk": "2.2-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "HTTP_Request2": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Alexey Borzov",
-                    "email": "avb@php.net",
-                    "role": "Developer HTML_Common2"
+                    "email": "avb@php.net"
                 }
             ],
             "description": "Provides an easy way to perform HTTP requests.",
@@ -768,7 +825,7 @@
                 "http",
                 "request"
             ],
-            "time": "2014-01-16 17:27:21"
+            "time": "2016-02-13 20:20:39"
         },
         {
             "name": "pear/net_url2",
@@ -885,57 +942,6 @@
                 "exception"
             ],
             "time": "2015-02-10 20:07:52"
-        },
-        {
-            "name": "phpwhois/idna-convert",
-            "version": "v0.8.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpWhois/idna-convert.git",
-                "reference": "ea337954b43ae47f5ebba97c19d309081bebc46e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpWhois/idna-convert/zipball/ea337954b43ae47f5ebba97c19d309081bebc46e",
-                "reference": "ea337954b43ae47f5ebba97c19d309081bebc46e",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "idna_convert.class.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Matthias Sommerfeld",
-                    "email": "phlymail@phlylabs.de",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dmitry Lukashin",
-                    "email": "dmitry@lukashin.ru",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "idna-convert library based on http://idnaconv.phlymail.de/",
-            "homepage": "http://idnaconv.phlymail.de/",
-            "keywords": [
-                "idn",
-                "idna",
-                "php"
-            ],
-            "abandoned": "mso/idna-convert",
-            "time": "2014-12-26 04:51:08"
         },
         {
             "name": "psr/cache",
@@ -1179,26 +1185,27 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.21",
+            "version": "v2.8.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "54fb85a818596bc3b33618125fa3ee99b9f45382"
+                "reference": "a871ba00e0f604dceac64c56c27f99fbeaf4854e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/54fb85a818596bc3b33618125fa3ee99b9f45382",
-                "reference": "54fb85a818596bc3b33618125fa3ee99b9f45382",
+                "url": "https://api.github.com/repos/symfony/console/zipball/a871ba00e0f604dceac64c56c27f99fbeaf4854e",
+                "reference": "a871ba00e0f604dceac64c56c27f99fbeaf4854e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9",
-                "symfony/debug": "~2.7,>=2.7.2"
+                "symfony/debug": "~2.7,>=2.7.2|~3.0.0",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1",
-                "symfony/process": "~2.1"
+                "symfony/event-dispatcher": "~2.1|~3.0.0",
+                "symfony/process": "~2.1|~3.0.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -1208,7 +1215,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -1235,37 +1242,37 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-13 17:41:36"
+            "time": "2016-11-15 23:02:12"
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.14",
+            "version": "v3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "62a68f640456f6761d752c62d81631428ef0d8a1"
+                "reference": "697c527acd9ea1b2d3efac34d9806bf255278b0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/62a68f640456f6761d752c62d81631428ef0d8a1",
-                "reference": "62a68f640456f6761d752c62d81631428ef0d8a1",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/697c527acd9ea1b2d3efac34d9806bf255278b0a",
+                "reference": "697c527acd9ea1b2d3efac34d9806bf255278b0a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
+                "php": ">=5.5.9",
                 "psr/log": "~1.0"
             },
             "conflict": {
                 "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "symfony/class-loader": "~2.2|~3.0.0",
-                "symfony/http-kernel": "~2.3.24|~2.5.9|~2.6,>=2.6.2|~3.0.0"
+                "symfony/class-loader": "~2.8|~3.0",
+                "symfony/http-kernel": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1292,20 +1299,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-15 12:53:17"
+            "time": "2016-07-30 07:22:48"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.21",
+            "version": "v2.8.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "0e89934a55c762ed7aad55f707e946b82b7410e3"
+                "reference": "0023b024363dfc0cd21262e556f25a291fe8d7fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/0e89934a55c762ed7aad55f707e946b82b7410e3",
-                "reference": "0e89934a55c762ed7aad55f707e946b82b7410e3",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/0023b024363dfc0cd21262e556f25a291fe8d7fd",
+                "reference": "0023b024363dfc0cd21262e556f25a291fe8d7fd",
                 "shasum": ""
             },
             "require": {
@@ -1314,7 +1321,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -1341,7 +1348,66 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-03 07:44:55"
+            "time": "2016-11-03 07:52:58"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14 01:06:16"
         },
         {
             "name": "symfony/process",
@@ -1484,35 +1550,35 @@
         },
         {
             "name": "typo3/cms",
-            "version": "7.6.0",
+            "version": "7.6.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f"
+                "reference": "9de61953bd98bebfbf7cc985896009db4245c24b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
-                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/9de61953bd98bebfbf7cc985896009db4245c24b",
+                "reference": "9de61953bd98bebfbf7cc985896009db4245c24b",
                 "shasum": ""
             },
             "require": {
                 "cogpowered/finediff": "~0.3.1",
                 "doctrine/instantiator": "~1.0.4",
-                "ext-fileinfo": "*",
+                "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-session": "*",
                 "ext-xml": "*",
-                "pear/http_request2": "~2.2.1",
+                "mso/idna-convert": "^0.9.1",
+                "pear/http_request2": "~2.3.0",
                 "php": ">=5.5.0",
-                "phpwhois/idna-convert": "~0.8.2",
                 "psr/http-message": "~1.0",
-                "psr/log": "1.0.*@dev",
+                "psr/log": "~1.0.0",
                 "swiftmailer/swiftmailer": "~5.4.1",
-                "symfony/console": "~2.7.0",
-                "symfony/finder": "~2.7.0",
+                "symfony/console": "^2.7",
+                "symfony/finder": "^2.7",
                 "typo3/class-alias-loader": "^1.0",
-                "typo3/cms-composer-installers": "^1.2.2"
+                "typo3/cms-composer-installers": "^1.2.8"
             },
             "replace": {
                 "typo3/cms-about": "self.version",
@@ -1572,10 +1638,13 @@
             },
             "require-dev": {
                 "mikey179/vfsstream": "1.6.0",
-                "phpunit/phpunit": "~4.8.0"
+                "phpunit/phpunit": "~4.8.0",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "suggest": {
+                "ext-fileinfo": "Used for proper file type detection in the file abstraction layer",
                 "ext-gd": "GDlib/Freetype is required for building images with text (GIFBUILDER) and can also be used to scale images",
+                "ext-mysqli": "",
                 "ext-openssl": "",
                 "ext-soap": "",
                 "ext-zip": "",
@@ -1587,7 +1656,7 @@
                     "always-add-alias-loader": true
                 },
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-TYPO3_7-6": "7.x-dev"
                 }
             },
             "autoload": {
@@ -1644,30 +1713,27 @@
                     "TYPO3\\CMS\\Workspaces\\": "typo3/sysext/workspaces/Classes/"
                 },
                 "classmap": [
-                    "typo3/sysext/core/Resources/PHP/"
+                    "typo3/sysext/core/Resources/PHP/",
+                    "typo3/sysext/fluid/Resources/PHP/"
                 ],
                 "files": [
                     "typo3/sysext/core/Resources/PHP/GlobalDebugFunctions.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "vendor/pear/http_request2/",
-                "vendor/pear/net_url2/"
-            ],
             "license": [
                 "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "TYPO3 CMS Core Team",
-                    "homepage": "http://forge.typo3.org/projects/typo3cms-core",
-                    "role": "Developer"
-                },
-                {
                     "name": "The TYPO3 Community",
                     "homepage": "https://typo3.org/community/",
                     "role": "Contributor"
+                },
+                {
+                    "name": "TYPO3 CMS Core Team",
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
                 }
             ],
             "description": "TYPO3 CMS is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.",
@@ -1678,7 +1744,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-11-10 13:37:21"
+            "time": "2016-11-29 09:44:43"
         },
         {
             "name": "typo3/cms-composer-installers",
