@@ -20,9 +20,12 @@ services:
       MYSQL_DATABASE: 'typo3'
       INSTALL_TOOL_PASSWORD: 'password'
       XDEBUG_CONFIG: '${XDEBUG_CONFIG}'
+    volumes:
+      - fileadmin:/app/fileadmin
     ports:
       - 8080:80
     links:
       - db
-    volumes:
-      - ./fileadmin://var/www/html/fileadmin
+volumes:
+  fileadmin:
+    driver: local

@@ -40,7 +40,8 @@
     "helhum/typo3-console": {
       "install-binary": false,
       "active-packages": [
-        "dkd_semantic_eye"
+          "dkd_semantic_eye",
+          "filemetadata"
       ]
     }
   }
